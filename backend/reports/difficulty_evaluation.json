@@ -1,0 +1,72 @@
+{
+  "task_name": "difficulty",
+  "classes": [
+    "Easy",
+    "Hard",
+    "Medium"
+  ],
+  "train_samples": 895,
+  "test_samples": 224,
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.9464,
+  "macro_precision": 0.963,
+  "macro_recall": 0.9297,
+  "macro_f1": 0.9436,
+  "weighted_f1": 0.9462,
+  "baseline": {
+    "accuracy": 0.4643,
+    "macro_f1": 0.2114,
+    "strategy": "most_frequent"
+  },
+  "per_class": {
+    "Easy": {
+      "precision": 0.9855,
+      "recall": 0.9444,
+      "f1_score": 0.9645,
+      "support": 72
+    },
+    "Hard": {
+      "precision": 1.0,
+      "recall": 0.8542,
+      "f1_score": 0.9213,
+      "support": 48
+    },
+    "Medium": {
+      "precision": 0.9035,
+      "recall": 0.9904,
+      "f1_score": 0.945,
+      "support": 104
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Easy",
+      "Hard",
+      "Medium"
+    ],
+    "matrix": [
+      [
+        68,
+        0,
+        4
+      ],
+      [
+        0,
+        41,
+        7
+      ],
+      [
+        1,
+        0,
+        103
+      ]
+    ]
+  },
+  "class_distribution": {
+    "Medium": 520,
+    "Easy": 360,
+    "Hard": 239
+  },
+  "warnings": [],
+  "generalization_note": "Evaluation was conducted on a held-out 80/20 stratified split. Classifiers trained on school examination items generalize to similar question formats within the Tamil Nadu State Board syllabus."
+}

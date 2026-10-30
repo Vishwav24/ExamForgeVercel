@@ -1,0 +1,171 @@
+{
+  "success": true,
+  "dataset_source": "Hugging Face Uzaib52/edubloom-question-bank",
+  "file_path": "C:\\Users\\iniya\\OneDrive\\Desktop\\mini project\\backend\\data\\questions_dataset.csv",
+  "total_rows_inspected": 73712,
+  "valid_usable_rows": 73712,
+  "total_rejected_rows": 0,
+  "duplicate_rows_in_source": 0,
+  "duplicate_questions_dropped": 0,
+  "rejection_breakdown": {
+    "missing_or_empty_question": 0,
+    "unmapped_or_invalid_bloom": 0,
+    "unmapped_or_invalid_difficulty": 0,
+    "duplicate_questions": 0
+  },
+  "columns_found": [
+    "question_id",
+    "question",
+    "subject",
+    "topic",
+    "bloom_level",
+    "question_type",
+    "difficulty"
+  ],
+  "missing_stats_by_column": {
+    "question_id": {
+      "null_count": 0,
+      "empty_count": 0,
+      "total_missing": 0
+    },
+    "question": {
+      "null_count": 0,
+      "empty_count": 0,
+      "total_missing": 0
+    },
+    "subject": {
+      "null_count": 0,
+      "empty_count": 0,
+      "total_missing": 0
+    },
+    "topic": {
+      "null_count": 0,
+      "empty_count": 0,
+      "total_missing": 0
+    },
+    "bloom_level": {
+      "null_count": 0,
+      "empty_count": 0,
+      "total_missing": 0
+    },
+    "question_type": {
+      "null_count": 0,
+      "empty_count": 0,
+      "total_missing": 0
+    },
+    "difficulty": {
+      "null_count": 0,
+      "empty_count": 0,
+      "total_missing": 0
+    }
+  },
+  "raw_bloom_distribution": {
+    "Understand": 22350,
+    "Analyze": 16309,
+    "Remember": 12279,
+    "Apply": 9927,
+    "Create": 6492,
+    "Evaluate": 6355
+  },
+  "mapped_bloom_distribution": {
+    "Remember": {
+      "count": 12279,
+      "percentage": 16.66
+    },
+    "Understand": {
+      "count": 22350,
+      "percentage": 30.32
+    },
+    "Apply": {
+      "count": 9927,
+      "percentage": 13.47
+    },
+    "Analyze": {
+      "count": 16309,
+      "percentage": 22.13
+    },
+    "Evaluate": {
+      "count": 6355,
+      "percentage": 8.62
+    },
+    "Create": {
+      "count": 6492,
+      "percentage": 8.81
+    }
+  },
+  "raw_difficulty_distribution": {
+    "Medium": 29652,
+    "Easy": 24842,
+    "Hard": 19218
+  },
+  "mapped_difficulty_distribution": {
+    "Easy": {
+      "count": 24842,
+      "percentage": 33.7
+    },
+    "Medium": {
+      "count": 29652,
+      "percentage": 40.23
+    },
+    "Hard": {
+      "count": 19218,
+      "percentage": 26.07
+    }
+  },
+  "subject_diversity": {
+    "unique_subjects": 11,
+    "distribution": {
+      "Economics": 6877,
+      "History": 6783,
+      "Accounting": 6776,
+      "Psychology": 6768,
+      "Physics": 6709,
+      "Mathematics": 6702,
+      "Chemistry": 6653,
+      "Geography": 6646,
+      "Computer Science": 6640,
+      "Biology": 6617,
+      "Artificial Intelligence": 6541
+    }
+  },
+  "topic_diversity": {
+    "unique_topics": 110,
+    "top_topics": {
+      "journal entries": 728,
+      "cognitive psychology": 723,
+      "macroeconomics": 723,
+      "international trade": 717,
+      "climate": 714,
+      "market structures": 707,
+      "depreciation": 704,
+      "linear algebra": 702,
+      "balance sheet": 701,
+      "generative AI": 700,
+      "industrial revolution": 699,
+      "discrete mathematics": 699,
+      "fiscal policy": 698,
+      "monetary policy": 697,
+      "human physiology": 696
+    }
+  },
+  "l_code_mapping_verified": {
+    "L1 -> Remember": 12279,
+    "L2 -> Understand": 22350,
+    "L3 -> Apply": 9927,
+    "L4 -> Analyze": 16309,
+    "L5 -> Evaluate": 6355,
+    "L6 -> Create": 6492
+  },
+  "training_feasibility": {
+    "bloom_classification_ready": true,
+    "difficulty_classification_ready": true,
+    "recommended_action": "Eligible for candidate model training (unpromoted)."
+  },
+  "curriculum_alignment_guard": {
+    "board_tag_applied": "General / EduBloom",
+    "verified_state": false,
+    "state_board_isolation_enforced": true,
+    "note": "EduBloom questions will never be labeled as Tamil Nadu State Board or mixed into State Board question bank without manual curriculum verification."
+  },
+  "inspected_at": "2026-10-29T11:21:30.189604+00:00"
+}

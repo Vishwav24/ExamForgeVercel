@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-10-11T14:42:05.838249+00:00",
+  "random_seed": 42,
+  "test_size_fraction": 0.2,
+  "dataset_path": "backend/data/questions_dataset.csv",
+  "total_dataset_rows": 73712,
+  "models": {
+    "bloom_taxonomy": {
+      "pipeline": "TfidfVectorizer + LogisticRegression",
+      "artifact": "backend/models/bloom_model.joblib",
+      "classes": [
+        "Remember",
+        "Understand",
+        "Apply",
+        "Analyze",
+        "Evaluate",
+        "Create"
+      ],
+      "train_samples": 58969,
+      "test_samples": 14743,
+      "accuracy": 0.3905,
+      "macro_f1": 0.3542,
+      "baseline_accuracy": 0.3032
+    },
+    "difficulty": {
+      "pipeline": "TfidfVectorizer + LogisticRegression",
+      "artifact": "backend/models/difficulty_model.joblib",
+      "classes": [
+        "Easy",
+        "Medium",
+        "Hard"
+      ],
+      "train_samples": 58969,
+      "test_samples": 14743,
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "baseline_accuracy": 0.4023
+    }
+  },
+  "generalization_caveat": "Caution: Held-out performance reflects internal dataset consistency. Repetitive template structures in public question corpora may inflate test metrics. Teacher verification of predicted labels remains recommended."
+}

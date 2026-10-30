@@ -1,0 +1,89 @@
+{
+  "success": true,
+  "combined_csv_path": "C:\\Users\\iniya\\OneDrive\\Desktop\\mini project\\backend\\data\\combined_training_dataset.csv",
+  "created_at": "2026-10-14T17:30:45.922860+00:00",
+  "datasets": {
+    "existing_dataset": {
+      "name": "Tamil Nadu State Board Question Bank (Samacheer Kalvi)",
+      "source_file": "C:\\Users\\iniya\\OneDrive\\Desktop\\mini project\\backend\\data\\tamilnadu_state_board_sample.csv",
+      "original_rows": 1254,
+      "valid_rows": 1004,
+      "rejected_rows": 0,
+      "duplicates_pruned": 250,
+      "rejection_breakdown": {
+        "empty_question": 0,
+        "unmapped_bloom": 0,
+        "unmapped_difficulty": 0,
+        "duplicates": 250
+      }
+    },
+    "edubloom_dataset": {
+      "name": "Hugging Face EduBloom Question Bank (Uzaib52/edubloom-question-bank)",
+      "source_file": "C:\\Users\\iniya\\OneDrive\\Desktop\\mini project\\backend\\data\\questions_dataset.csv",
+      "original_rows": 73712,
+      "valid_rows": 73712,
+      "rejected_rows": 0,
+      "duplicates_pruned": 0,
+      "cross_dataset_duplicates_pruned": 0,
+      "rejection_breakdown": {
+        "empty_question": 0,
+        "unmapped_bloom": 0,
+        "unmapped_difficulty": 0,
+        "internal_duplicates": 0,
+        "cross_dataset_duplicates": 0
+      }
+    }
+  },
+  "summary": {
+    "total_source_rows": 74966,
+    "existing_valid_rows": 1004,
+    "edubloom_valid_rows": 73712,
+    "total_rejected_rows": 0,
+    "total_duplicates_pruned": 250,
+    "final_combined_valid_rows": 74716
+  },
+  "final_combined_row_count": 74716,
+  "existing_dataset": {
+    "name": "Tamil Nadu State Board Question Bank (Samacheer Kalvi)",
+    "source_rows_count": 1254,
+    "valid_usable_rows": 1004,
+    "rejected_rows": 0,
+    "internal_duplicates_removed": 250
+  },
+  "edubloom_dataset": {
+    "name": "Hugging Face EduBloom Question Bank (Uzaib52/edubloom-question-bank)",
+    "source_rows_count": 73712,
+    "valid_usable_rows": 73712,
+    "rejected_rows": 0,
+    "internal_duplicates_removed": 0
+  },
+  "deduplication": {
+    "cross_dataset_duplicates_removed": 0,
+    "existing_internal_duplicates_removed": 250,
+    "edubloom_internal_duplicates_removed": 0,
+    "total_duplicates_removed": 250
+  },
+  "provenance": {
+    "tamil_nadu_state_board_rows": 1004,
+    "general_edubloom_rows": 73712
+  },
+  "label_distributions": {
+    "bloom_level": {
+      "Remember": 12392,
+      "Understand": 22570,
+      "Apply": 10147,
+      "Analyze": 16578,
+      "Evaluate": 6533,
+      "Create": 6496
+    },
+    "difficulty": {
+      "Easy": 25164,
+      "Medium": 30133,
+      "Hard": 19419
+    }
+  },
+  "isolation_policy": {
+    "tamil_nadu_state_board_exclusive": true,
+    "note": "General EduBloom questions have board=\"General / EduBloom\" and verified=False; they are never selected for Tamil Nadu State Board examination papers."
+  }
+}

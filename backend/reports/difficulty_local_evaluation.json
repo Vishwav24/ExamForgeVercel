@@ -1,0 +1,91 @@
+{
+  "model_version": "rf-difficulty-local-v20261029_105122",
+  "task_name": "difficulty",
+  "algorithm": "RandomForestClassifier",
+  "timestamp": "2026-10-29T10:51:22.166849+00:00",
+  "dataset_source": "csv",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_features": 10000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "dataset_split": {
+    "total_samples": 3000,
+    "train_samples": 2400,
+    "test_samples": 600,
+    "test_size": 0.2
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "macro_precision": 1.0,
+    "macro_recall": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "majority_baseline_accuracy": 0.3333333333333333
+  },
+  "classification_report": {
+    "Easy": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 200.0
+    },
+    "Medium": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 200.0
+    },
+    "Hard": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 200.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 600.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 600.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Easy",
+      "Medium",
+      "Hard"
+    ],
+    "matrix": [
+      [
+        200,
+        0,
+        0
+      ],
+      [
+        0,
+        200,
+        0
+      ],
+      [
+        0,
+        0,
+        200
+      ]
+    ]
+  },
+  "training_duration_seconds": 0.13,
+  "artifact_path": "C:\\Users\\iniya\\OneDrive\\Desktop\\mini project\\backend\\models\\rf-difficulty-local-v20261029_105122.joblib"
+}

@@ -1,0 +1,215 @@
+{
+  "dataset_path": "backend/data/questions_dataset.csv",
+  "dataset_shape": {
+    "rows": 73712,
+    "columns": 7
+  },
+  "columns": [
+    "question_id",
+    "question",
+    "subject",
+    "topic",
+    "bloom_level",
+    "question_type",
+    "difficulty"
+  ],
+  "missing_values": {
+    "question_id": 0,
+    "question": 0,
+    "subject": 0,
+    "topic": 0,
+    "bloom_level": 0,
+    "question_type": 0,
+    "difficulty": 0
+  },
+  "exact_duplicates": 0,
+  "question_text_duplicates": 0,
+  "bloom_distribution": {
+    "Remember": {
+      "count": 12279,
+      "percentage": 16.66
+    },
+    "Understand": {
+      "count": 22350,
+      "percentage": 30.32
+    },
+    "Apply": {
+      "count": 9927,
+      "percentage": 13.47
+    },
+    "Analyze": {
+      "count": 16309,
+      "percentage": 22.13
+    },
+    "Evaluate": {
+      "count": 6355,
+      "percentage": 8.62
+    },
+    "Create": {
+      "count": 6492,
+      "percentage": 8.81
+    }
+  },
+  "difficulty_distribution": {
+    "Easy": {
+      "count": 24842,
+      "percentage": 33.7
+    },
+    "Medium": {
+      "count": 29652,
+      "percentage": 40.23
+    },
+    "Hard": {
+      "count": 19218,
+      "percentage": 26.07
+    }
+  },
+  "bloom_examples": {
+    "Remember": [
+      "What is a common example of behavioral psychology in an educational setting, from an academic perspective?",
+      "What role does rivers play in a professional environment, from a real-world perspective?",
+      "Which basic principle applies to atomic structure in an educational setting, from a problem-solving perspective?",
+      "Why is mechanics important in a practical scenario, from a performance perspective?",
+      "Where is European history commonly used in a developing environment, from a theoretical perspective?"
+    ],
+    "Understand": [
+      "Which factors should be considered when applying oceanography when accuracy is critical, from a theoretical perspective?",
+      "Which basic principle applies to genetics when accuracy is critical, from an application perspective?",
+      "Give an example related to organic chemistry. in a complex situation, from an academic perspective?",
+      "Which concept is closely related to depreciation in everyday applications, from an academic perspective?",
+      "How can social psychology be used in a real-world situation in a changing environment, from an academic perspective?"
+    ],
+    "Apply": [
+      "What practical problems can be addressed using population geography when resources are constrained?",
+      "Why might one approach to data structures be preferred over another in a developing environment, from a theoretical perspective?",
+      "How are different components of natural resources connected when accuracy is critical?",
+      "How can unemployment be applied to a practical problem when conditions change, from an application perspective?",
+      "What factors influence ancient civilizations in an educational setting, from a real-world perspective?"
+    ],
+    "Analyze": [
+      "How could gravitation be improved for a large-scale application in a practical scenario?",
+      "How would you handle conflicting factors while applying cost accounting when efficiency is required?",
+      "How can thermodynamics be applied to a practical problem in a large-scale system?",
+      "What factors influence ecology in an academic context, from a practical perspective?",
+      "What practical problems can be addressed using differential equations in an academic context, from an application perspective?"
+    ],
+    "Evaluate": [
+      "How could inflation be optimized under practical constraints in a changing environment, from an application perspective?",
+      "How could microbiology be optimized under practical constraints in a large-scale system, from an academic perspective?",
+      "How could chemical equilibrium be improved for a large-scale application when accuracy is critical, from a real-world perspective?",
+      "How could inorganic chemistry be adapted to a challenging real-world scenario when accuracy is critical, from an academic perspective?",
+      "How would you justify choosing one approach to organic chemistry over another when conditions change, from a theoretical perspective?"
+    ],
+    "Create": [
+      "What evidence would be required to evaluate chemical bonding when reliability is important?",
+      "How could organic chemistry be optimized under practical constraints under normal conditions, from an application perspective?",
+      "What risks should be considered in a large-scale implementation of cognitive psychology in a developing environment?",
+      "How would you compare alternative approaches involving optics in a professional environment?",
+      "What factors should be considered when evaluating cost accounting in an educational setting, from a theoretical perspective?"
+    ]
+  },
+  "difficulty_examples": {
+    "Easy": [
+      "What is a common example of behavioral psychology in an educational setting, from an academic perspective?",
+      "Which basic principle applies to genetics when accuracy is critical, from an application perspective?",
+      "Give an example related to organic chemistry. in a complex situation, from an academic perspective?",
+      "Which concept is closely related to depreciation in everyday applications, from an academic perspective?",
+      "What is the basic idea behind Indian history in a real-world application?"
+    ],
+    "Medium": [
+      "Which factors should be considered when applying oceanography when accuracy is critical, from a theoretical perspective?",
+      "How can social psychology be used in a real-world situation in a changing environment, from an academic perspective?",
+      "What practical problems can be addressed using population geography when resources are constrained?",
+      "Why might one approach to data structures be preferred over another in a developing environment, from a theoretical perspective?",
+      "What practical problems can be addressed using climate in a modern organization, from an academic perspective?"
+    ],
+    "Hard": [
+      "What evidence would be required to evaluate chemical bonding when reliability is important?",
+      "How could organic chemistry be optimized under practical constraints under normal conditions, from an application perspective?",
+      "What risks should be considered in a large-scale implementation of cognitive psychology in a developing environment?",
+      "How would you compare alternative approaches involving optics in a professional environment?",
+      "How could inflation be optimized under practical constraints in a changing environment, from an application perspective?"
+    ]
+  },
+  "metadata_diversity": {
+    "subject": {
+      "unique_values": 11,
+      "top_5": {
+        "Economics": 6877,
+        "History": 6783,
+        "Accounting": 6776,
+        "Psychology": 6768,
+        "Physics": 6709
+      }
+    },
+    "topic": {
+      "unique_values": 110,
+      "top_5": {
+        "journal entries": 728,
+        "cognitive psychology": 723,
+        "macroeconomics": 723,
+        "international trade": 717,
+        "climate": 714
+      }
+    },
+    "question_type": {
+      "unique_values": 9,
+      "top_5": {
+        "Conceptual": 15590,
+        "Analytical": 12109,
+        "Recall": 8376,
+        "Definition": 8229,
+        "Comparison": 7594
+      }
+    }
+  },
+  "top_question_templates": [
+    {
+      "template_prefix": "why might one approach",
+      "occurrences": 425
+    },
+    {
+      "template_prefix": "what is the relationship",
+      "occurrences": 422
+    },
+    {
+      "template_prefix": "how would you explain",
+      "occurrences": 415
+    },
+    {
+      "template_prefix": "what differences can be",
+      "occurrences": 411
+    },
+    {
+      "template_prefix": "what limitations can occur",
+      "occurrences": 401
+    },
+    {
+      "template_prefix": "what practical problems can",
+      "occurrences": 396
+    },
+    {
+      "template_prefix": "what consequences may result",
+      "occurrences": 391
+    },
+    {
+      "template_prefix": "which factors should be",
+      "occurrences": 389
+    },
+    {
+      "template_prefix": "what conditions can influence",
+      "occurrences": 387
+    },
+    {
+      "template_prefix": "how are different components",
+      "occurrences": 382
+    }
+  ],
+  "stratification_feasibility": {
+    "minimum_recommended_samples": 50,
+    "bloom_taxonomy_suitable": true,
+    "underrepresented_bloom_classes": [],
+    "difficulty_suitable": true,
+    "underrepresented_difficulty_classes": []
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "task_name": "difficulty",
+  "is_candidate": true,
+  "classes": [
+    "Easy",
+    "Hard",
+    "Medium"
+  ],
+  "train_samples": 96,
+  "test_samples": 24,
+  "train_accuracy": 0.9896,
+  "test_accuracy": 0.5417,
+  "macro_precision": 0.5469,
+  "macro_recall": 0.5417,
+  "macro_f1": 0.5343,
+  "weighted_f1": 0.5343,
+  "template_leakage_overlap_count": 0,
+  "baseline": {
+    "accuracy": 0.3333,
+    "macro_f1": 0.1667,
+    "strategy": "most_frequent"
+  },
+  "active_model_comparison": {
+    "active_version": "rf-diffi-v20261014_151425",
+    "active_accuracy": 0.9464,
+    "active_macro_f1": 0.9436,
+    "active_macro_precision": 0.963,
+    "active_macro_recall": 0.9297,
+    "candidate_accuracy": 0.5417,
+    "candidate_macro_f1": 0.5343,
+    "delta_accuracy": -0.4047,
+    "delta_macro_f1": -0.4093,
+    "delta_macro_precision": -0.4161,
+    "delta_macro_recall": -0.388,
+    "performance_improved": false
+  },
+  "tn_benchmark_evaluation": {
+    "benchmark_name": "Tamil Nadu State Board Held-Out Test Benchmark",
+    "test_samples": 259,
+    "accuracy": 0.3977,
+    "macro_f1": 0.385
+  },
+  "per_class": {
+    "Easy": {
+      "precision": 0.5455,
+      "recall": 0.75,
+      "f1_score": 0.6316,
+      "support": 8
+    },
+    "Hard": {
+      "precision": 0.4286,
+      "recall": 0.375,
+      "f1_score": 0.4,
+      "support": 8
+    },
+    "Medium": {
+      "precision": 0.6667,
+      "recall": 0.5,
+      "f1_score": 0.5714,
+      "support": 8
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Easy",
+      "Hard",
+      "Medium"
+    ],
+    "matrix": [
+      [
+        6,
+        2,
+        0
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        4
+      ]
+    ]
+  },
+  "class_distribution": {
+    "Easy": 40,
+    "Medium": 40,
+    "Hard": 40
+  },
+  "warnings": [],
+  "generalization_note": "Evaluation was conducted on a held-out 80/20 stratified split with grouped template leakage prevention. Candidate models are evaluated independently and require explicit admin action before promotion."
+}

@@ -1,0 +1,145 @@
+{
+  "model_version": "rf-bloom-local-v20261029_105121",
+  "task_name": "bloom_level",
+  "algorithm": "RandomForestClassifier",
+  "timestamp": "2026-10-29T10:51:21.848408+00:00",
+  "dataset_source": "csv",
+  "hyperparameters": {
+    "n_estimators": 30,
+    "max_features": 10000,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "sublinear_tf": true,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "dataset_split": {
+    "total_samples": 3000,
+    "train_samples": 2400,
+    "test_samples": 600,
+    "test_size": 0.2
+  },
+  "metrics": {
+    "accuracy": 0.44333333333333336,
+    "macro_precision": 0.4093672023702579,
+    "macro_recall": 0.44333333333333336,
+    "macro_f1": 0.417614396737003,
+    "weighted_f1": 0.41761439673700307,
+    "majority_baseline_accuracy": 0.16666666666666666
+  },
+  "classification_report": {
+    "Remember": {
+      "precision": 0.6124031007751938,
+      "recall": 0.79,
+      "f1-score": 0.6899563318777293,
+      "support": 100.0
+    },
+    "Understand": {
+      "precision": 0.21818181818181817,
+      "recall": 0.12,
+      "f1-score": 0.15483870967741936,
+      "support": 100.0
+    },
+    "Apply": {
+      "precision": 0.4666666666666667,
+      "recall": 0.63,
+      "f1-score": 0.5361702127659574,
+      "support": 100.0
+    },
+    "Analyze": {
+      "precision": 0.2898550724637681,
+      "recall": 0.2,
+      "f1-score": 0.23668639053254437,
+      "support": 100.0
+    },
+    "Evaluate": {
+      "precision": 0.43820224719101125,
+      "recall": 0.39,
+      "f1-score": 0.4126984126984127,
+      "support": 100.0
+    },
+    "Create": {
+      "precision": 0.43089430894308944,
+      "recall": 0.53,
+      "f1-score": 0.47533632286995514,
+      "support": 100.0
+    },
+    "accuracy": 0.44333333333333336,
+    "macro avg": {
+      "precision": 0.4093672023702579,
+      "recall": 0.44333333333333336,
+      "f1-score": 0.417614396737003,
+      "support": 600.0
+    },
+    "weighted avg": {
+      "precision": 0.4093672023702579,
+      "recall": 0.44333333333333336,
+      "f1-score": 0.41761439673700307,
+      "support": 600.0
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Remember",
+      "Understand",
+      "Apply",
+      "Analyze",
+      "Evaluate",
+      "Create"
+    ],
+    "matrix": [
+      [
+        79,
+        21,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        50,
+        12,
+        26,
+        12,
+        0,
+        0
+      ],
+      [
+        0,
+        17,
+        63,
+        20,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        46,
+        20,
+        13,
+        16
+      ],
+      [
+        0,
+        0,
+        0,
+        7,
+        39,
+        54
+      ],
+      [
+        0,
+        0,
+        0,
+        10,
+        37,
+        53
+      ]
+    ]
+  },
+  "training_duration_seconds": 0.2,
+  "artifact_path": "C:\\Users\\iniya\\OneDrive\\Desktop\\mini project\\backend\\models\\rf-bloom-local-v20261029_105121.joblib"
+}

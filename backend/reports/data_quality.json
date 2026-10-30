@@ -1,0 +1,56 @@
+{
+  "dataset_source": "Uzaib52/edubloom-question-bank",
+  "license": "MIT",
+  "actual_columns": [
+    "question_id",
+    "question",
+    "subject",
+    "topic",
+    "bloom_level",
+    "question_type",
+    "difficulty"
+  ],
+  "missing_values": {
+    "question_id": 0,
+    "question": 0,
+    "subject": 0,
+    "topic": 0,
+    "bloom_level": 0,
+    "question_type": 0,
+    "difficulty": 0
+  },
+  "original_row_count": 73712,
+  "cleaned_row_count": 73712,
+  "duplicates_removed": 0,
+  "removed_missing_questions": 0,
+  "removed_missing_bloom": 0,
+  "removed_missing_difficulty": 0,
+  "raw_bloom_distribution": {
+    "L2": 22350,
+    "L4": 16309,
+    "L1": 12279,
+    "L3": 9927,
+    "L6": 6492,
+    "L5": 6355
+  },
+  "raw_difficulty_distribution": {
+    "Medium": 29652,
+    "Easy": 24842,
+    "Hard": 19218
+  },
+  "label_distributions": {
+    "bloom_level": {
+      "Understand": 22350,
+      "Analyze": 16309,
+      "Remember": 12279,
+      "Apply": 9927,
+      "Create": 6492,
+      "Evaluate": 6355
+    },
+    "difficulty": {
+      "Medium": 29652,
+      "Easy": 24842,
+      "Hard": 19218
+    }
+  }
+}
